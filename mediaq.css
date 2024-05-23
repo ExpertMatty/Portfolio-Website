@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+     
+  }
+
+  header h2{
+    padding-left: 40px;
+  }
+
+  .menu ul{
+    display: flex;
+    padding-right: 90px;
+}
+
+li{
+    list-style: none;
+    margin-right: 30px;
+    color: #fff;
+  }
+
+a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+
+
+
+  /* .line{
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 5px;
+  }
+
+  .line2{
+  width: 25px;
+  }
+
+  .line3{
+  width: 15px;
+  } */
+
+  .fa-sharp{
+    display: none;
+    font-size: 25px;
+    margin-right: 40px;
+  }
+
+  .hamburger{
+    display: none;
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  
+
+  main{
+    background-color: bisque;
+    padding: 20px;
+    /* height: 50vh; */
+  }
+
+  main p{
+    text-align: justify;
+    line-height: 30px;
+  }
+
+  h2{
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  footer{
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /* CSS styles for phones */
+    /* main p{
+        text-align: justify;
+        line-height: 20px;
+        font-size: 10px;
+      } */
+
+      main{
+        background-color: bisque;
+        padding: 20px;
+        /* height: 200vh; */
+      }
+    
+      header h2{
+         font-size: medium;
+      }
+
+      .menu{
+        display: none;
+      }
+   
+    .hamburger:hover.dropdown{
+        display: block;
+    }
+  }
+
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* CSS styles for tablets */
+
+    .hamburger{
+        display: flex;
+      }
+
+      .menu{
+        display: none;
+      }
+  }
+  
+  
